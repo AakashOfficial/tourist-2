@@ -1,0 +1,17 @@
+li#customize-control-archive_sidebar_align img,
+li#customize-control-page_sidebar_align img,
+li#customize-control-post_sidebar_align img {
+    width: 45px;
+    margin: 5px;
+    padding: 3px;
+}
+
+li#customize-control-archive_sidebar_align img:last-child, 
+li#customize-control-page_sidebar_align img:last-child, 
+li#customize-control-post_sidebar_align img:last-child {
+    margin-right: 5px;
+}
+
+.customize-control-kirki .description {
+    font-weight: 400 !important;
+}
