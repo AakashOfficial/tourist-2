@@ -97,7 +97,12 @@ jQuery(window).load(function() {
                         lng : parseFloat(hotel.location.lng),
                     },
                     title: hotel.title,
-                    img: hotel.img
+                    img: hotel.img,
+                    icon: {
+                        url: '/wp-content/themes/hitmag/images/map-marker-'+hotel.type+'.png',
+                        origin: new google.maps.Point(0, 0),
+                        size: new google.maps.Size(24, 40),
+                    }
                 });
                 sub_marker.addListener('click', function() {
                     infowindow.close();

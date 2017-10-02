@@ -31,6 +31,7 @@
             $subresult['location']['lng'] = $coords[1];
             $subresult['img'] = get_the_post_thumbnail($hotel->ID);
             $subresult['title'] = $hotel->post_title; 
+            $subresult['type'] = 'hotel'; 
             $subresult['current'] = 0;
             if($current_id == $hotel->ID){
                 $subresult['current'] = 1;
