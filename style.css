@@ -3051,6 +3051,7 @@ object {
 }
 #nomera .room:last-child{
     margin-bottom:0px;
+    border-bottom:0px;
 }
 .room{
     overflow:hidden;
@@ -3109,11 +3110,13 @@ object {
 }
 .services li{
    width: 33%;
-   padding-left:15px;
-   box-sizing:border-box;
-   position:relative;
 }
-.services li::before{
+#udobstva li, .services li, .hotel-rules li{
+    padding-left:15px;
+    box-sizing:border-box;
+    position:relative;
+}
+#udobstva li::before, .hotel-rules li::before{
     content:'';
     position:absolute;
     width:4px;
@@ -3130,4 +3133,37 @@ object {
 #hotel-map{
     width:100%;
     height:400px;
+}
+@media (max-width:700px){
+    .services li{
+        width:100%;
+    }
+}
+.hotel-rules{
+    box-sizing:border-box;
+    padding:10px;
+    border:solid 1px #ECF0F1;
+    margin-top:1.5em;
+    
+}
+.hotel-rules h2, .hotel-rules h3, .hotel-rules h4{
+    margin-top:0px;
+    margin-bottom:0.3em;
+}
+.hotel-rules h2{
+    font-size:1.5rem;
+    font-size:24px;
+}
+.hotel-rules p, .hotel-rules li{
+    font-size:14px;   
+}
+.hotel-rules p, .hotel-rules ul{
+    margin-bottom:0.8em;
+    padding-left:0px;
+}
+.hotel-rules ul{
+    list-style:none;
+}
+.hotel-link{
+    margin-top:1.5em;
 }
